@@ -1,246 +1,141 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfolio de Damien Silva — ingénierie mécanique, conception CAO, simulation numérique, fabrication et impression 3D.">
-  <meta name="theme-color" content="#0b1120">
-  <title>Damien Silva — Mechanical Engineering Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Damien Silva — ingénierie mécanique, conception, simulation et impression 3D">
+<title>Damien Silva — Engineering & Design</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script defer src="script.js"></script>
 </head>
 <body>
-  <div class="grid-bg" aria-hidden="true"></div>
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="Damien Silva, accueil">
-      <span class="brand-mark">DS<span>↗</span></span>
-      <span class="brand-copy"><strong>DAMIEN SILVA</strong><small>MECHANICAL ENGINEERING</small></span>
-    </a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu <span>☰</span></button>
-    <nav id="nav" class="nav">
-      <a href="#projects">Projets</a><a href="#skills">Compétences</a><a href="#silva-prints">Silva Prints</a><a href="#about">À propos</a>
-      <a class="nav-cta" href="#contact">Me contacter <span>↗</span></a>
-    </nav>
-  </header>
+<header>
+<a class="brand" href="#top"><b>DS</b><span>DAMIEN SILVA<small>ENGINEERING · DESIGN · MAKING</small></span></a>
+<nav id="nav">
+<a href="#projects" data-fr="Projets" data-en="Projects">Projets</a>
+<a href="#about" data-fr="À propos" data-en="About">À propos</a>
+<a href="#silva" data-fr="Silva Prints" data-en="Silva Prints">Silva Prints</a>
+<a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
+</nav>
+<button id="lang">EN</button>
+<button id="menu" aria-label="Menu">☰</button>
+</header>
 
-  <main>
-    <section id="home" class="hero wrap">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="pulse"></span> PORTFOLIO PERSONNEL <span class="eyebrow-line"></span> 2026</p>
-        <h1>From concept<br>to <span class="gradient-text">reality.</span></h1>
-        <p class="hero-intro">Je transforme des idées en solutions mécaniques concrètes, de la conception CAO à la simulation, jusqu'à la fabrication et au prototypage.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#projects">Explorer mes projets <span>↓</span></a>
-          <a class="button secondary" href="#contact">Entrer en contact <span>↗</span></a>
-        </div>
-        <div class="hero-meta">
-          <span><i class="meta-dot"></i> Génie mécanique · HEPIA</span>
-          <span>Genève, Suisse</span>
-        </div>
-      </div>
-      <div class="hero-visual" aria-label="Illustration technique abstraite d'une pièce mécanique">
-        <div class="visual-top"><span>FIG. 001 / DESIGN STUDY</span><span>DS—01</span></div>
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
-        <svg class="mechanical-art" viewBox="0 0 500 500" role="img" aria-label="Schéma stylisé d'un mécanisme mécanique">
-          <defs><linearGradient id="metal" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#d7e7f7"/><stop offset=".48" stop-color="#6f8da9"/><stop offset="1" stop-color="#263c56"/></linearGradient></defs>
-          <g fill="none" stroke="#47708f" stroke-width="1" opacity=".55">
-            <circle cx="250" cy="250" r="180" stroke-dasharray="3 8"/><circle cx="250" cy="250" r="145" stroke-dasharray="2 9"/>
-            <path d="M55 250H445M250 55V445M110 110L390 390M390 110L110 390"/>
-          </g>
-          <g transform="translate(250 250)">
-            <circle r="118" fill="#101d30" stroke="#7aa5c9" stroke-width="2"/>
-            <circle r="96" fill="none" stroke="#38bdf8" stroke-width="9" stroke-dasharray="16 8"/>
-            <circle r="72" fill="url(#metal)" stroke="#b9d7ef" stroke-width="2"/>
-            <circle r="51" fill="#15263b" stroke="#38bdf8" stroke-width="2"/>
-            <circle r="22" fill="url(#metal)" stroke="#d7e7f7" stroke-width="2"/>
-            <circle r="8" fill="#0b1120"/>
-            <g fill="#0b1120" stroke="#9ab8d3" stroke-width="1.4">
-              <circle cx="0" cy="-86" r="7"/><circle cx="61" cy="-61" r="7"/><circle cx="86" cy="0" r="7"/>
-              <circle cx="61" cy="61" r="7"/><circle cx="0" cy="86" r="7"/><circle cx="-61" cy="61" r="7"/>
-              <circle cx="-86" cy="0" r="7"/><circle cx="-61" cy="-61" r="7"/>
-            </g>
-          </g>
-          <g fill="none" stroke="#38bdf8" stroke-width="1.5"><path d="M334 153L405 93H449"/><path d="M154 322L91 379H49"/><path d="M260 132V76H300"/></g>
-          <g fill="#9ccbe8" font-family="monospace" font-size="10"><text x="405" y="84">SECTION A—A</text><text x="49" y="394">Ø / TOLERANCE</text><text x="307" y="70">ASSEMBLY</text></g>
-          <g fill="#38bdf8"><circle cx="334" cy="153" r="3"/><circle cx="154" cy="322" r="3"/><circle cx="260" cy="132" r="3"/></g>
-        </svg>
-        <div class="visual-bottom"><span>ENGINEERING / DESIGN / BUILD</span><span class="crosshair">⊕</span></div>
-      </div>
-      <div class="scroll-cue"><span></span> SCROLL TO EXPLORE</div>
-    </section>
+<main id="top">
+<section class="hero wrap">
+<div class="hero-copy reveal">
+<p class="eyebrow" data-fr="INGÉNIERIE MÉCANIQUE · CONCEPTION · FABRICATION" data-en="MECHANICAL ENGINEERING · DESIGN · MAKING">INGÉNIERIE MÉCANIQUE · CONCEPTION · FABRICATION</p>
+<h1 data-fr="Du concept<br>à la <em>réalité.</em>" data-en="From concept<br>to <em>reality.</em>">Du concept<br>à la <em>réalité.</em></h1>
+<p class="lead" data-fr="Je transforme des idées en solutions concrètes, en combinant conception mécanique, simulation et fabrication." data-en="I turn ideas into practical solutions by combining mechanical design, simulation and manufacturing.">Je transforme des idées en solutions concrètes, en combinant conception mécanique, simulation et fabrication.</p>
+<a class="btn dark" href="#projects" data-fr="Découvrir mes projets ↗" data-en="Explore my projects ↗">Découvrir mes projets ↗</a>
+<a class="btn" href="#silva">Silva Prints ↗</a>
+<p class="meta" data-fr="Basé en Suisse · Ouvert aux opportunités" data-en="Based in Switzerland · Open to opportunities">Basé en Suisse · Ouvert aux opportunités</p>
+</div>
+<div class="hero-art reveal">
+<span class="artnote">FIG. 01 / DESIGN PROCESS</span>
+<div class="orbit o1"></div><div class="orbit o2"></div>
+<div class="solid"><i></i></div>
+<span class="dimension d1">X — 042.8</span>
+<span class="dimension d2">R 12.0</span>
+<span class="artbottom">IDEA → ITERATION → OBJECT</span>
+</div>
+</section>
 
-    <section id="projects" class="section wrap">
-      <div class="section-heading">
-        <div><p class="eyebrow">01 / SELECTED WORK</p><h2>Projets <span class="muted">sélectionnés.</span></h2></div>
-        <p class="section-aside">Des problématiques concrètes, une démarche structurée et des choix techniques documentés.</p>
-      </div>
-      <div class="project-grid">
-        <article class="project-card featured">
-          <a class="project-art vhélio-art" href="projects/vhelio.html" aria-label="Découvrir le projet Vhélio">
-            <span class="art-label">BACHELOR PROJECT / 01</span>
-            <svg viewBox="0 0 600 280" role="img" aria-label="Illustration conceptuelle d'un châssis tubulaire et tôlé">
-              <g stroke="#5d91b9" stroke-width="2" fill="none">
-                <path d="M95 177L178 115L385 132L468 183L374 222L164 211Z"/>
-                <path d="M95 177L164 211L178 115M178 115L260 166L385 132M260 166L255 218M385 132L374 222M468 183L385 132M164 211L255 218L374 222"/>
-                <path d="M178 115L235 91L443 108L468 183M235 91L260 166M443 108L385 132"/>
-              </g>
-              <g fill="#173a59" stroke="#38bdf8" stroke-width="1.5"><path d="M178 115L235 91L443 108L385 132L260 166Z"/><path d="M260 166L385 132L374 222L255 218Z" opacity=".65"/><path d="M95 177L178 115L260 166L164 211Z" opacity=".45"/></g>
-              <g fill="none" stroke="#38bdf8" stroke-width="1" stroke-dasharray="4 4"><path d="M80 240H500M80 55H500"/></g>
-              <g fill="#9ccbe8" font-family="monospace" font-size="10"><text x="80" y="49">CHASSIS / LIGHTWEIGHT DESIGN</text><text x="390" y="256">SCHEMATIC</text></g>
-            </svg>
-            <span class="art-corner">↗</span>
-          </a>
-          <div class="project-info">
-            <div class="project-kicker"><span>01</span> CONCEPTION & OPTIMISATION</div>
-            <h3>Vhélio — Optimisation du châssis</h3>
-            <p>Repenser un châssis de tricycle solaire cargo pour réduire la complexité de fabrication et optimiser la structure.</p>
-            <div class="tag-row"><span>ANSYS</span><span>CAO</span><span>Tôlerie</span><span>Aluminium</span></div>
-            <a class="text-link" href="projects/vhelio.html">Voir l'étude <span>↗</span></a>
-          </div>
-        </article>
-        <article class="project-card">
-          <a class="project-art fea-art" href="projects/simulation.html" aria-label="Découvrir les études de simulation">
-            <span class="art-label">NUMERICAL STUDY / 02</span>
-            <svg viewBox="0 0 420 250" role="img" aria-label="Maillage de calcul par éléments finis">
-              <defs><linearGradient id="stress" x1="0" x2="1"><stop stop-color="#38bdf8"/><stop offset=".5" stop-color="#a78bfa"/><stop offset="1" stop-color="#fb7185"/></linearGradient></defs>
-              <path d="M90 60L295 38L340 83L319 190L112 211L70 160Z" fill="#12253a" stroke="url(#stress)" stroke-width="3"/>
-              <g stroke="#4f86ac" stroke-width="1" fill="none" opacity=".9">
-                <path d="M90 60L112 211M131 56L151 207M172 51L190 203M213 47L230 199M254 42L270 195M295 38L310 192"/>
-                <path d="M80 93L328 74M73 126L326 112M85 161L322 151M98 190L319 185"/>
-                <path d="M90 60L131 56L172 51L213 47L254 42L295 38M70 160L112 140L151 125L190 110L230 94L270 83L340 83"/>
-              </g>
-              <g fill="#9ccbe8" font-family="monospace" font-size="10"><text x="20" y="27">FINITE ELEMENT ANALYSIS</text><text x="286" y="231">MESH / FEA</text></g>
-            </svg><span class="art-corner">↗</span>
-          </a>
-          <div class="project-info">
-            <div class="project-kicker"><span>02</span> SIMULATION NUMÉRIQUE</div>
-            <h3>Analyse mécanique par éléments finis</h3>
-            <p>Documenter les hypothèses, les conditions aux limites, le maillage et l'interprétation des résultats ANSYS.</p>
-            <div class="tag-row"><span>ANSYS</span><span>FEA</span><span>Contraintes</span></div>
-            <a class="text-link" href="projects/simulation.html">Voir la démarche <span>↗</span></a>
-          </div>
-        </article>
-        <article class="project-card">
-          <a class="project-art print-art" href="#silva-prints" aria-label="Découvrir Silva Prints">
-            <span class="art-label">PROTOTYPING / 03</span>
-            <svg viewBox="0 0 420 250" role="img" aria-label="Illustration de pièce imprimée en 3D">
-              <g transform="translate(210 125)" stroke="#38bdf8" stroke-width="1.6">
-                <path d="M-92 -38L0 -85L92 -38L0 9Z" fill="#183a57"/>
-                <path d="M-92 -38V47L0 94V9Z" fill="#122a41"/>
-                <path d="M0 9L92 -38V47L0 94Z" fill="#1c496a"/>
-                <g fill="none" stroke="#72c9f2" opacity=".9">
-                  <path d="M-92 -17L0 30L92 -17M-92 4L0 51L92 4M-92 25L0 72L92 25"/>
-                  <path d="M-69 -50V35M-46 -61V47M-23 -73V59M23 -73V82M46 -61V70M69 -50V59"/>
-                </g>
-                <circle cx="0" cy="9" r="23" fill="#0b1120"/><circle cx="0" cy="9" r="12" fill="none" stroke="#38bdf8" stroke-width="3"/>
-              </g>
-              <g fill="#9ccbe8" font-family="monospace" font-size="10"><text x="20" y="27">ADDITIVE MANUFACTURING</text><text x="284" y="231">PROTOTYPE / 3D</text></g>
-            </svg><span class="art-corner">↗</span>
-          </a>
-          <div class="project-info">
-            <div class="project-kicker"><span>03</span> FABRICATION ADDITIVE</div>
-            <h3>Prototypage & impression 3D</h3>
-            <p>Des idées transformées en pièces : conception, choix de la matière, stratégie d'impression et validation fonctionnelle.</p>
-            <div class="tag-row"><span>CAO</span><span>FDM</span><span>Prototypage</span></div>
-            <a class="text-link" href="#silva-prints">Découvrir Silva Prints <span>↗</span></a>
-          </div>
-        </article>
-        <article class="project-card">
-          <a class="project-art workshop-art" href="projects/workshop.html" aria-label="Découvrir les réalisations d'atelier">
-            <span class="art-label">WORKSHOP / 04</span>
-            <svg viewBox="0 0 420 250" role="img" aria-label="Illustration technique d'un assemblage mécanique">
-              <g fill="none" stroke="#5d91b9" stroke-width="2">
-                <path d="M60 177L120 137L325 137L365 165L302 202L100 202Z"/>
-                <path d="M120 137V88L310 88L325 137M60 177V125L120 88M365 165V112L310 88"/>
-                <path d="M120 88L170 115L365 112M170 115V164M170 164L302 202M170 115L100 202"/>
-              </g>
-              <g fill="#173a59" stroke="#38bdf8" stroke-width="1.3"><path d="M120 88L310 88L365 112L170 115Z"/><path d="M170 115L365 112V165L302 202L170 164Z" opacity=".5"/></g>
-              <g fill="#9ccbe8" font-family="monospace" font-size="10"><text x="20" y="27">DESIGN FOR MANUFACTURING</text><text x="294" y="231">ASSEMBLY</text></g>
-            </svg><span class="art-corner">↗</span>
-          </a>
-          <div class="project-info">
-            <div class="project-kicker"><span>04</span> CONCEPTION & ATELIER</div>
-            <h3>Du modèle à la pièce fabriquée</h3>
-            <p>Une approche de terrain : choix de procédés, assemblages, tolérances et contraintes de production.</p>
-            <div class="tag-row"><span>Usinage</span><span>Assemblage</span><span>DFM</span></div>
-            <a class="text-link" href="projects/workshop.html">Voir les réalisations <span>↗</span></a>
-          </div>
-        </article>
-      </div>
-      <p class="note"><span>ⓘ</span> Les visuels schématiques de cette première version sont des illustrations de mise en page. Remplace-les par tes captures CAO, photos d'atelier et résultats de simulation avant publication.</p>
-    </section>
+<section class="wrap strip">
+<p data-fr="Comprendre. Concevoir. Tester. Améliorer." data-en="Understand. Design. Test. Improve.">Comprendre. Concevoir. Tester. Améliorer.</p>
+<small>SCROLL TO EXPLORE ↓</small>
+</section>
 
-    <section id="skills" class="section skills-section">
-      <div class="wrap">
-        <div class="section-heading">
-          <div><p class="eyebrow">02 / TOOLKIT</p><h2>Compétences <span class="muted">techniques.</span></h2></div>
-          <p class="section-aside">Un profil qui relie conception numérique, compréhension mécanique et réalité de la fabrication.</p>
-        </div>
-        <div class="skills-grid">
-          <div class="skill-item"><span class="skill-icon">⌘</span><div><h3>Conception CAO</h3><p>Creo Parametric · Assemblages · Mise en plan</p></div><span class="skill-index">01</span></div>
-          <div class="skill-item"><span class="skill-icon">◈</span><div><h3>Simulation numérique</h3><p>ANSYS Workbench · Éléments finis · Validation</p></div><span class="skill-index">02</span></div>
-          <div class="skill-item"><span class="skill-icon">⚙</span><div><h3>Fabrication mécanique</h3><p>Usinage · Tôlerie · Assemblage · Tolérances</p></div><span class="skill-index">03</span></div>
-          <div class="skill-item"><span class="skill-icon">▦</span><div><h3>Prototypage</h3><p>Impression 3D · Conception de pièces fonctionnelles</p></div><span class="skill-index">04</span></div>
-          <div class="skill-item"><span class="skill-icon">∑</span><div><h3>Calcul & analyse</h3><p>Dimensionnement · Interprétation des résultats</p></div><span class="skill-index">05</span></div>
-          <div class="skill-item"><span class="skill-icon">↗</span><div><h3>Amélioration continue</h3><p>Optimisation · Simplicité · Conception pour fabriquer</p></div><span class="skill-index">06</span></div>
-        </div>
-      </div>
-    </section>
+<section class="wrap section" id="projects">
+<div class="section-head reveal">
+<div>
+<p class="eyebrow" data-fr="SÉLECTION" data-en="SELECTED WORK">SÉLECTION</p>
+<h2 data-fr="Projets choisis." data-en="Selected projects.">Projets choisis<span>.</span></h2>
+</div>
+<p data-fr="Des projets qui relient réflexion technique, conception numérique et contraintes de fabrication." data-en="Projects connecting technical thinking, digital design and real-world manufacturing constraints.">Des projets qui relient réflexion technique, conception numérique et contraintes de fabrication.</p>
+</div>
 
-    <section id="silva-prints" class="section wrap prints-section">
-      <div class="prints-panel">
-        <div class="prints-copy">
-          <p class="eyebrow">03 / PERSONAL VENTURE</p>
-          <h2>Engineering meets<br><span class="gradient-text">Silva Prints.</span></h2>
-          <p>Une activité dédiée à l'impression 3D et au prototypage : transformer un besoin en une pièce utile, pensée pour son usage.</p>
-          <ul class="prints-list"><li><span>01</span> Pièces personnalisées</li><li><span>02</span> Prototypes fonctionnels</li><li><span>03</span> Modélisation et adaptation CAO</li></ul>
-          <a class="button primary" href="#contact">Discuter d'un projet <span>↗</span></a>
-        </div>
-        <div class="prints-visual">
-          <div class="print-frame"><span class="frame-label">SILVA PRINTS / OBJECT STUDY</span>
-            <svg viewBox="0 0 400 360" role="img" aria-label="Rendu stylisé d'une pièce technique imprimée en 3D">
-              <defs><linearGradient id="part" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#7dd3fc"/><stop offset="1" stop-color="#2563a3"/></linearGradient></defs>
-              <g transform="translate(200 170)" stroke="#9adfff" stroke-width="1.4">
-                <path d="M-112 -55L-15 -108L105 -57L12 -5Z" fill="url(#part)"/>
-                <path d="M-112 -55V63L12 124V-5Z" fill="#17446b"/>
-                <path d="M12 -5L105 -57V61L12 124Z" fill="#23649a"/>
-                <path d="M-73 -76L-73 43M-40 -94L-40 59M-7 -104V77M26 -87V92M59 -75V77M84 -66V72" fill="none" opacity=".7"/>
-                <ellipse cx="12" cy="-5" rx="35" ry="18" fill="#0b1120"/><ellipse cx="12" cy="-5" rx="20" ry="10" fill="none" stroke="#7dd3fc" stroke-width="3"/>
-                <path d="M-112 -25L12 35L105 -22M-112 4L12 65L105 8M-112 33L12 94L105 37" fill="none" opacity=".5"/>
-              </g>
-              <g stroke="#38bdf8" stroke-width="1" fill="none"><path d="M260 70L325 37H362"/><path d="M110 230L58 271H24"/></g>
-              <g fill="#9ccbe8" font-family="monospace" font-size="10"><text x="270" y="29">FUNCTIONAL PART</text><text x="22" y="288">DESIGN / PRINT / TEST</text></g>
-            </svg>
-            <div class="print-frame-foot"><span>CAD → SLICING → PRINT</span><span>SP—001</span></div>
-          </div>
-        </div>
-      </div>
-      <p class="note"><span>ⓘ</span> Cette section est une vitrine de services. Ajoute tes produits, tarifs, délais et modalités de commande lorsque tu es prêt à les proposer.</p>
-    </section>
+<div class="cards">
+<a class="card featured reveal" href="projects/vhelio.html">
+<div class="art vhelio"><small>01 / MOBILITY</small><div class="bike"><i></i><i></i><i></i><b></b></div><label>CHASSIS / CONCEPT STUDY</label></div>
+<p class="tag">CONCEPTION MÉCANIQUE · ÉCO-CONCEPTION</p>
+<h3>Vhélio — châssis optimisé <span>↗</span></h3>
+<p data-fr="Alléger et simplifier un châssis de vélo cargo solaire, de l'optimisation topologique à la conception pour la fabrication." data-en="Reducing weight and simplifying a solar cargo bike chassis, from topology optimization to design for manufacturing.">Alléger et simplifier un châssis de vélo cargo solaire, de l'optimisation topologique à la conception pour la fabrication.</p>
+</a>
 
-    <section id="about" class="section wrap about-section">
-      <div class="about-number">04</div>
-      <div class="about-content">
-        <p class="eyebrow">04 / ABOUT ME</p><h2>La mécanique,<br><span class="muted">du concret à l'analyse.</span></h2>
-        <p>Mon parcours associe une formation pratique de polymécanicien à des études en génie mécanique. J'aime comprendre comment un système fonctionne, concevoir une solution et tenir compte des contraintes qui apparaissent lorsqu'il faut réellement la fabriquer.</p>
-        <p>À travers mes projets, je cherche à combiner rigueur technique, simplicité de conception et résultats mesurables.</p>
-        <div class="about-facts"><div><span>01</span><strong>Concevoir</strong><small>Modéliser une solution</small></div><div><span>02</span><strong>Vérifier</strong><small>Analyser et dimensionner</small></div><div><span>03</span><strong>Fabriquer</strong><small>Passer au concret</small></div></div>
-      </div>
-    </section>
+<a class="card reveal" href="projects/simulation.html">
+<div class="art sim"><small>02 / SIMULATION</small><div class="mesh"></div><label>FEA / STRUCTURAL STUDY</label></div>
+<p class="tag">SIMULATION · ÉLÉMENTS FINIS</p>
+<h3 data-fr="Analyse structurelle" data-en="Structural analysis">Analyse structurelle</h3>
+<p data-fr="Étudier les contraintes et le comportement d'une structure avec une démarche de simulation et de validation." data-en="Explore structural stress and behaviour through simulation and validation.">Étudier les contraintes et le comportement d'une structure avec une démarche de simulation et de validation.</p>
+</a>
 
-    <section id="contact" class="contact-section">
-      <div class="wrap contact-inner">
-        <p class="eyebrow">05 / CONTACT</p><h2>Un projet en tête ?<br><span class="gradient-text">Parlons mécanique.</span></h2>
-        <p>Opportunité professionnelle, collaboration technique ou demande d'impression 3D : je serais ravi d'échanger.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="mailto:TON.EMAIL@EXEMPLE.CH">M'écrire un email <span>↗</span></a>
-          <a class="button secondary" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
-          <a class="button secondary" href="https://github.com/damiensilva0" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
-        </div>
-        <p class="replace-warning">Avant publication : remplace l'adresse email et vérifie les liens de contact.</p>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer wrap"><a class="brand" href="#home"><span class="brand-mark">DS<span>↗</span></span><span class="brand-copy"><strong>DAMIEN SILVA</strong><small>ENGINEERING PORTFOLIO</small></span></a><span>Designed with precision. © <span id="year">2026</span></span><a href="#home">Retour en haut ↑</a></footer>
-  <script src="script.js"></script>
+<a class="card reveal" href="projects/workshop.html">
+<div class="art workshop"><small>03 / PROTOTYPING</small><div class="cube"></div><label>CAD / MAKING / ITERATION</label></div>
+<p class="tag">ATELIER · PROTOTYPAGE</p>
+<h3 data-fr="De la CAO à la pièce" data-en="From CAD to part">De la CAO à la pièce</h3>
+<p data-fr="Concevoir en tenant compte des procédés, des assemblages, des tolérances et de la mise en œuvre." data-en="Designing with manufacturing processes, assemblies, tolerances and practical implementation in mind.">Concevoir en tenant compte des procédés, des assemblages, des tolérances et de la mise en œuvre.</p>
+</a>
+</div>
+<p class="note" data-fr="Visuels provisoires : remplace-les par tes propres photos, rendus CAO et captures de simulation avant publication professionnelle." data-en="Placeholder visuals: replace them with your own photos, CAD renders and simulation screenshots before professional use.">Visuels provisoires : remplace-les par tes propres photos, rendus CAO et captures de simulation avant publication professionnelle.</p>
+</section>
+
+<section class="about" id="about">
+<div class="wrap about-grid">
+<div class="reveal">
+<p class="eyebrow" data-fr="À PROPOS" data-en="ABOUT">À PROPOS</p>
+<h2 data-fr="Curieux de nature.<br><em>Pratique par choix.</em>" data-en="Naturally curious.<br><em>Practical by choice.</em>">Curieux de nature.<br><em>Pratique par choix.</em></h2>
+</div>
+<div class="reveal">
+<p class="quote" data-fr="Comment concevoir quelque chose d'efficace, réalisable et utile ?" data-en="How can we design something effective, manufacturable and useful?">Comment concevoir quelque chose d'efficace, réalisable et utile ?</p>
+<p data-fr="Formé en mécanique et orienté vers l'ingénierie mécanique, j'aime relier la conception numérique à la réalité de l'atelier. Je m'intéresse à la conception mécanique, aux matériaux, à la fabrication et au prototypage." data-en="With a background in mechanics and a focus on mechanical engineering, I enjoy connecting digital design with the reality of the workshop. My interests include mechanical design, materials, manufacturing and prototyping.">Formé en mécanique et orienté vers l'ingénierie mécanique, j'aime relier la conception numérique à la réalité de l'atelier. Je m'intéresse à la conception mécanique, aux matériaux, à la fabrication et au prototypage.</p>
+<div class="skills">
+<span>CAO & conception</span><span>ANSYS / simulation</span><span>Fabrication</span><span>Impression 3D</span><span>Éco-conception</span>
+</div>
+</div>
+</div>
+</section>
+
+<section class="wrap section" id="silva">
+<div class="prints reveal">
+<div>
+<p class="eyebrow">SIDE PROJECT / 3D PRINTING</p>
+<h2>Silva Prints<span>.</span></h2>
+<p data-fr="Des idées, des pièces utiles et des prototypes — conçus avec soin et fabriqués à la demande." data-en="Ideas, useful parts and prototypes — thoughtfully designed and made to order.">Des idées, des pièces utiles et des prototypes — conçus avec soin et fabriqués à la demande.</p>
+<ul>
+<li data-fr="Pièces personnalisées" data-en="Custom-made parts">Pièces personnalisées</li>
+<li data-fr="Prototypage rapide" data-en="Rapid prototyping">Prototypage rapide</li>
+<li data-fr="Petites séries et projets sur mesure" data-en="Small batches and bespoke projects">Petites séries et projets sur mesure</li>
+</ul>
+<a class="btn dark" href="#contact" data-fr="Discuter d'un projet ↗" data-en="Discuss a project ↗">Discuter d'un projet ↗</a>
+</div>
+<div class="print-art"><div class="print-cube"></div><small>DESIGN IT. MAKE IT.</small></div>
+</div>
+</section>
+
+<section class="wrap contact" id="contact">
+<div class="reveal">
+<p class="eyebrow" data-fr="CONTACT" data-en="CONTACT">CONTACT</p>
+<h2 data-fr="Construisons quelque chose<br><em>d'utile.</em>" data-en="Let's build something<br><em>useful.</em>">Construisons quelque chose<br><em>d'utile.</em></h2>
+<p data-fr="Pour une opportunité professionnelle, une collaboration ou une demande d'impression 3D, contacte-moi." data-en="For career opportunities, collaborations or 3D printing enquiries, get in touch.">Pour une opportunité professionnelle, une collaboration ou une demande d'impression 3D, contacte-moi.</p>
+<a class="btn dark" href="mailto:TON.EMAIL@EXEMPLE.CH" data-fr="Me contacter par e-mail ↗" data-en="Get in touch by email ↗">Me contacter par e-mail ↗</a>
+</div>
+<div class="contact-info">
+<small>EMAIL</small>
+<a href="mailto:TON.EMAIL@EXEMPLE.CH">TON.EMAIL@EXEMPLE.CH</a>
+<small>LINKEDIN</small>
+<a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">Ajouter mon profil LinkedIn ↗</a>
+<p class="note" data-fr="À personnaliser avant publication : remplace l'adresse e-mail et le lien LinkedIn par tes coordonnées réelles." data-en="Before publishing, replace the email address and LinkedIn link with your real contact details.">À personnaliser avant publication : remplace l'adresse e-mail et le lien LinkedIn par tes coordonnées réelles.</p>
+</div>
+</section>
+</main>
+
+<footer class="wrap footer">
+<a class="brand" href="#top"><b>DS</b><span>DAMIEN SILVA<small>ENGINEERING · DESIGN · MAKING</small></span></a>
+<span>© <span id="year"></span> Damien Silva</span>
+<a href="#top">↑</a>
+</footer>
 </body>
 </html>
